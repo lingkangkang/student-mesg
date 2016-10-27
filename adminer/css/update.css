@@ -1,0 +1,91 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+#input{
+    display: none;
+}
+body{
+    background-color: rgba(0,0,0,0.1);
+    border: double 40px white;
+
+}
+#search{
+    margin-top: 50px;
+    width: 90%;
+    height: 50px;
+
+
+}
+#btn2{
+    position: absolute;
+    width: 93.5%;
+
+}
+#updateInput{
+    display: none;
+    text-align: center;
+    height: 50px;
+}
+#updateOld,#updateNew,#updateSearch{
+    height: 50px;
+}
+
+/*特效 显示*/
+#div1{
+    overflow: hidden;
+    -webkit-perspective: 800px;
+    -webkit-perspective-origin: 50% 50%;
+    text-align: center;
+    margin-left: 100px;
+    margin-top: 50px;
+}
+#div2,#div3,#div4,#div5,#div6,#div7,#div8,#div9{
+    transform-style: preserve-3d;
+    width: 100px;
+    height: 100px;
+    margin: 200px auto;
+    text-align: center;
+    line-height: 100px;
+    font-size: 40px;
+    float: left;
+    animation : divs 4s linear infinite;
+    /*border-radius:50px ;*/
+    /*border: solid 2px greenyellow;*/
+
+}
+#div10{
+    transform-style: preserve-3d;
+    width: 100px;
+    height: 100px;
+    margin: 200px auto;
+    text-align: center;
+    line-height: 100px;
+    font-size: 40px;
+    float: left;
+    background: url("http://p.jianli-sky.com/cms/1508/201508261031349281.jpg");
+    background-size: 100px 100px;
+    border-radius:50px ;
+}
+@keyframes divs {
+    from{
+        transform: rotateY(0deg)  ;
+    }
+    to{
+        transform: rotateY(360deg) ;
+    }
+
+}
+
+/*处理显示的信息*/
+
+li{
+    font-size: 12px;
+    transition: font-size 2s;
+}
+li:hover{
+    font-size: 30px;
+
+
+}

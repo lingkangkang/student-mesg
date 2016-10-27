@@ -1,0 +1,32 @@
+body{
+    background-color: aquamarine;
+    animation: all 6s linear ;
+}
+@keyframes all {
+    0%{
+        color: aquamarine;
+        background-color: white;
+        transform :scale(1,1)
+
+    }
+    25%{
+        transform :scale(2,2)
+    }
+    50%{
+        background-color: gray;
+        transform :scale(1,1)
+    }
+    75%{
+        color: aquamarine;
+        transform:translate(100,100)
+    }
+    100%{
+        color: black;
+        background-color: aquamarine;
+
+    }
+
+}
+.container{
+    border-radius: 50px;
+}

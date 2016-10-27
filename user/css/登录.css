@@ -1,0 +1,28 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+#div1{
+    background-color: cadetblue;
+    animation: div1 1s linear;
+}
+@keyframes div1 {
+    0%{
+        background-color: black;
+    }
+
+    25%{
+        background-color: black;
+    }
+
+    100%{
+        background-color: cadetblue;
+    }
+}
+.container{
+    display: none;
+    border-radius: 50px;
+
+}
+
+/*表单验证过程*/

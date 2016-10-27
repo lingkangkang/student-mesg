@@ -1,0 +1,83 @@
+body{
+    background-color: rgba(0,0,0,0.1);
+    border: double 40px white;
+
+}
+
+/*显示信息的操作*/
+
+#main{
+    width: 80%;
+    margin: auto;
+}
+#msg1{
+    transition: font-size 2s;
+}
+#msg1:hover{
+    font-size: 40px;
+
+}
+#msg2{
+    transition: font-size 2s;
+}
+#msg2:hover{
+    font-size: 40px;
+
+}
+#msg3{
+    transition: font-size 2s;
+}
+#msg3:hover{
+    font-size: 40px;
+
+}#msg4{
+     transition: font-size 2s;
+ }
+#msg4:hover{
+    font-size: 40px;
+
+}
+/*特效 显示*/
+#div1{
+    overflow: hidden;
+    -webkit-perspective: 800px;
+    -webkit-perspective-origin: 50% 50%;
+    text-align: center;
+    margin-left: 250px;
+}
+#div2,#div3,#div4,#div5,#div6,#div7,#div8,#div9{
+    transform-style: preserve-3d;
+    width: 100px;
+    height: 100px;
+    margin: 200px auto;
+    text-align: center;
+    line-height: 100px;
+    font-size: 40px;
+    float: left;
+    animation : divs 4s linear infinite;
+    /*border-radius:50px ;*/
+    /*border: solid 2px greenyellow;*/
+
+}
+#div10{
+    transform-style: preserve-3d;
+    width: 100px;
+    height: 100px;
+    margin: 200px auto;
+    text-align: center;
+    line-height: 100px;
+    font-size: 40px;
+    float: left;
+    background: url("http://p.jianli-sky.com/cms/1508/201508261031349281.jpg");
+    background-size: 100px 100px;
+    border-radius:50px ;
+}
+@keyframes divs {
+    from{
+        transform: rotateY(0deg)  ;
+    }
+    to{
+        transform: rotateY(360deg) ;
+    }
+
+}
